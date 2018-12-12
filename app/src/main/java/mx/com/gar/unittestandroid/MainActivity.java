@@ -2,6 +2,7 @@ package mx.com.gar.unittestandroid;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setMessage("Hello Word!").setTitle("Example");
+                builder.setNegativeButton("Good bye Word :(", new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialog, int id){
+
+                    }
+                }
+
+                );
                 AlertDialog dialog = builder.create();
                 dialog.show();
             }
