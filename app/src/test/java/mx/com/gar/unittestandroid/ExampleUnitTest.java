@@ -17,7 +17,7 @@ public class ExampleUnitTest {
     
     @Test
     public void string_isEqual() {
-        assertEquals("Hola", "Hola");
+        assertEquals("Holaa", "Holaa");
     }
     
 }
